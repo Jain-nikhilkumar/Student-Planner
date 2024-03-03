@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:student_planner/Dashborddemo_widget.dart';
 import 'package:student_planner/LoginpageWidget.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const LoginpageWidget(),
+      home: const DashborddemoWidget(),
     );
   }
 }
