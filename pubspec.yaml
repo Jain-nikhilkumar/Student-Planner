@@ -32,6 +32,7 @@ dependencies:
     sdk: flutter
   flutterflow_ui: ^0.2.0+1
   responsive_builder: any
+  flutter_keyboard_visibility: any
 
 
   # The following adds the Cupertino Icons font to your application.
