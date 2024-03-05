@@ -16,6 +16,8 @@ import 'package:provider/provider.dart';
 import "models/Dashborddemo_model.dart";
 export "models/Dashborddemo_model.dart";
 
+
+
 class DashborddemoWidget extends StatefulWidget {
   const DashborddemoWidget({super.key});
 
@@ -364,25 +366,20 @@ class _DashborddemoWidgetState extends State<DashborddemoWidget>
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
+          backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
-          title: Text(
-            'Dashboard',
-            style: FlutterFlowTheme.of(context).titleMedium.override(
-              fontFamily: 'Readex Pro',
-              fontSize: 35,
-            ),
-          ),
           actions: [],
           flexibleSpace: FlexibleSpaceBar(
-            background: ClipRRect(
-              borderRadius: BorderRadius.circular(8),
-              child: Image.network(
-                'https://images.unsplash.com/photo-1532012197267-da84d127e765?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHw1fHxlZHVjYXRpb258ZW58MHx8fHwxNzA4NzAzODM1fDA&ixlib=rb-4.0.3&q=80&w=1080',
-                fit: BoxFit.cover,
+            title: Text(
+              'Dashboard',
+              style: FlutterFlowTheme.of(context).titleMedium.override(
+                fontFamily: 'Readex Pro',
+                fontSize: 35,
               ),
             ),
+            centerTitle: true,
+            expandedTitleScale: 1.0,
           ),
-          centerTitle: false,
           elevation: 2,
         ),
         body: SafeArea(
@@ -394,7 +391,7 @@ class _DashborddemoWidgetState extends State<DashborddemoWidget>
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  height: 180,
+                  height: 160,
                   child: Stack(
                     children: [
                       Container(
@@ -491,7 +488,7 @@ class _DashborddemoWidgetState extends State<DashborddemoWidget>
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(0, 8, 0, 0),
                                               child: Text(
-                                                '24',
+                                                '800',
                                                 style:
                                                 FlutterFlowTheme.of(context)
                                                     .displaySmall,
@@ -574,7 +571,7 @@ class _DashborddemoWidgetState extends State<DashborddemoWidget>
                                           CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              'Completed\ntasks ',
+                                              'Completed tasks ',
                                               style: FlutterFlowTheme.of(
                                                   context)
                                                   .titleSmall
@@ -590,7 +587,7 @@ class _DashborddemoWidgetState extends State<DashborddemoWidget>
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(0, 8, 0, 0),
                                               child: Text(
-                                                '3,200',
+                                                '500',
                                                 style:
                                                 FlutterFlowTheme.of(context)
                                                     .displaySmall,
@@ -673,7 +670,7 @@ class _DashborddemoWidgetState extends State<DashborddemoWidget>
                                           CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              'Incomplete\ntasks ',
+                                              'Incomplete tasks ',
                                               style: FlutterFlowTheme.of(
                                                   context)
                                                   .titleSmall
@@ -689,7 +686,7 @@ class _DashborddemoWidgetState extends State<DashborddemoWidget>
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(0, 8, 0, 0),
                                               child: Text(
-                                                '3,200',
+                                                '300',
                                                 style:
                                                 FlutterFlowTheme.of(context)
                                                     .displaySmall,
@@ -1206,7 +1203,7 @@ class _DashborddemoWidgetState extends State<DashborddemoWidget>
                               ),
                               Padding(
                                 padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12 ),
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
                                 child: FlutterFlowChoiceChips(
                                   options: [
                                     ChipData('All'),
@@ -1342,7 +1339,7 @@ class _DashborddemoWidgetState extends State<DashborddemoWidget>
                                                 CrossAxisAlignment.start,
                                                 children: [
                                                   Text(
-                                                    'JoeMoe Coffee',
+                                                    'Solaput Handloom',
                                                     textAlign: TextAlign.end,
                                                     style: FlutterFlowTheme.of(
                                                         context)
@@ -1528,7 +1525,7 @@ class _DashborddemoWidgetState extends State<DashborddemoWidget>
                                                 CrossAxisAlignment.start,
                                                 children: [
                                                   Text(
-                                                    'JoeMoe Coffee',
+                                                    'Dubai Jwellers',
                                                     textAlign: TextAlign.end,
                                                     style: FlutterFlowTheme.of(
                                                         context)
