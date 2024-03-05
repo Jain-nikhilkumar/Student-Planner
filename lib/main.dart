@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:student_planner/Dashborddemo_widget.dart';
+import 'package:student_planner/Edit_task.dart';
 import 'package:student_planner/LoginpageWidget.dart';
 import 'package:student_planner/create_task.dart';
 import 'package:student_planner/task_list_widget.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const CreateTASKWidget(),
+      home: const EditTaskwedget(),
     );
   }
 }
